@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulmira Sahna Bezaklari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+
+    <!-- LEFT: Logo + Brand -->
+    <div class="nav-left">
+      <div class="logo-mark" aria-label="Gulmira Logo">G</div>
+      <div class="brand-text">
+        <span class="brand-main" data-i18n="brand">Gulmira</span>
+        <span class="brand-sub" data-i18n="brandSub">Sahna Bezaklari</span>
+      </div>
+    </div>
+
+    <!-- CENTER: Navigation Links -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#" class="nav-link active" data-page="home" data-i18n="navHome">Bosh sahifa</a>
+      <a href="#" class="nav-link" data-page="services" data-i18n="navServices">Xizmatlar</a>
+      <a href="#" class="nav-link" data-page="pricing" data-i18n="navPricing">Narxlar</a>
+      <a href="#" class="nav-link" data-page="contact" data-i18n="navContact">Aloqa</a>
+    </nav>
+
+    <!-- RIGHT: Controls + Hero Image -->
+    <div class="nav-right">
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" data-lang="uz">UZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <!-- Dark / Light Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+        <div class="toggle-thumb"></div>
+      </button>
+
+      <!-- Nav Hero Image -->
+      <div class="nav-hero-img" id="navHeroImg">
+        <img src="photo_2026-05-24_14-31-06.jpg" alt="Gulmira Sahna" />
+      </div>
+
+      <!-- Burger -->
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════ PAGES ══════════════════════════════════ -->
+<main class="page-container">
+
+  <!-- ───────────── HOME PAGE ───────────── -->
+  <section class="page" id="page-home" data-page="home">
+
+    <!-- Hero -->
+    <div class="hero-section">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span data-i18n="heroEyebrow">Professional Sahna Bezaklari</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line" data-i18n="heroTitle1">San'at va</span>
+          <span class="title-line highlight" data-i18n="heroTitle2">Nafosatning</span>
+          <span class="title-line" data-i18n="heroTitle3">Uyg'unligi</span>
+        </h1>
+        <p class="hero-desc" data-i18n="heroDesc">
+          Har bir tadbir uchun maxsus sahna bezaklari. Toy, tug'ilgan kun, korporativ tadbirlar va boshqa munosabatlar uchun professional dizayn xizmatlari.
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary" data-page="services" data-i18n="heroCta1">Xizmatlarni Ko'rish</button>
+          <button class="btn-ghost" data-page="contact" data-i18n="heroCta2">Bog'lanish</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-frame">
+          <img src="photo_2026-05-24_14-31-06.jpg" alt="Gulmira Sahna Bezaklari - Professional sahna bezagi" />
+          <div class="hero-img-fallback"></div>
+          <div class="frame-deco frame-deco-tl"></div>
+          <div class="frame-deco frame-deco-br"></div>
+        </div>
+        <div class="floating-badge">
+          <span class="badge-num">500+</span>
+          <span class="badge-label" data-i18n="badgeLabel">Muvaffaqiyatli tadbirlar</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">500+</span>
+        <span class="stat-label" data-i18n="stat2">Bajarilgan loyihalar</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">98%</span>
+        <span class="stat-label" data-i18n="stat3">Mijoz mamnuniyati</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label" data-i18n="stat4">Qo'llab-quvvatlash</span>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features-section">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="featTitle">Nima uchun biz?</h2>
+        <p class="section-sub" data-i18n="featSub">Professional yondashuv, sifatli natija</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">✦</div>
+          <h3 data-i18n="feat1Title">Eksklyuziv Dizayn</h3>
+          <p data-i18n="feat1Desc">Har bir tadbir uchun noyob va maxsus ishlab chiqilgan sahna bezaklari</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">◈</div>
+          <h3 data-i18n="feat2Title">Professional Jamoa</h3>
+          <p data-i18n="feat2Desc">Tajribali dizaynerlar va o'rnatuvchilar jamoasi bilan xizmat ko'rsatamiz</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">⬡</div>
+          <h3 data-i18n="feat3Title">O'z Vaqtida Yetkazish</h3>
+          <p data-i18n="feat3Desc">Har doim belgilangan vaqtda sifatli natija bilan topshiramiz</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">❋</div>
+          <h3 data-i18n="feat4Title">Keng Assortiment</h3>
+          <p data-i18n="feat4Desc">Gul bezakdan tortib to to'liq sahna jihozlanishigacha barcha xizmatlar</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ───────────── SERVICES PAGE ───────────── -->
+  <section class="page hidden" id="page-services" data-page="services">
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <div class="hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="servicesEyebrow">Bizning xizmatlar</span></div>
+        <h1 class="page-hero-title" data-i18n="servicesTitle">Xizmatlarimiz</h1>
+        <p data-i18n="servicesSubtitle">Har bir tadbir uchun maxsus yechimlar taklif etamiz</p>
+      </div>
+    </div>
+
+    <div class="services-grid-section">
+      <div class="services-grid">
+
+        <div class="service-card featured">
+          <div class="service-badge" data-i18n="svcPopular">Mashhur</div>
+          <div class="service-img-wrap">
+            <img src="assets/service-wedding.jpg" alt="To'y bezagi" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">💍</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc1Title">To'y Bezaklari</h3>
+            <p data-i18n="svc1Desc">Romantik va zamonaviy to'y marosimlari uchun to'liq sahna bezash xizmati. Gul kompozitsiyalari, parda bezaklari va yoritish.</p>
+            <ul class="service-features">
+              <li data-i18n="svc1f1">Gul kompozitsiyalari</li>
+              <li data-i18n="svc1f2">Fon bezaklari</li>
+              <li data-i18n="svc1f3">Shamlar va chiroqlar</li>
+              <li data-i18n="svc1f4">O'tirish joylari dizayni</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/service-birthday.jpg" alt="Tug'ilgan kun" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">🎂</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc2Title">Tug'ilgan Kun</h3>
+            <p data-i18n="svc2Desc">Bolalar va kattalar uchun yorqin va quvnoq tug'ilgan kun bezaklari. Har bir yosh uchun maxsus konsepsiya.</p>
+            <ul class="service-features">
+              <li data-i18n="svc2f1">Sharlar bezagi</li>
+              <li data-i18n="svc2f2">Tema dizayni</li>
+              <li data-i18n="svc2f3">Tort stoli bezagi</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/service-corporate.jpg" alt="Korporativ tadbir" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">🏢</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc3Title">Korporativ Tadbirlar</h3>
+            <p data-i18n="svc3Desc">Biznes uchrashuvlari, konferensiyalar va korporativ bayramlar uchun professional bezash xizmati.</p>
+            <ul class="service-features">
+              <li data-i18n="svc3f1">Brending elementlari</li>
+              <li data-i18n="svc3f2">Sahna dizayni</li>
+              <li data-i18n="svc3f3">Yoritish tizimi</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/service-graduation.jpg" alt="Bitirish" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">🎓</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc4Title">Bitirish Marosimlari</h3>
+            <p data-i18n="svc4Desc">Maktab va universitet bitiruvchilari uchun maxsus bezash paketlari. Unutilmas lahzalar uchun mukammal muhit.</p>
+            <ul class="service-features">
+              <li data-i18n="svc4f1">Fotozon bezagi</li>
+              <li data-i18n="svc4f2">Diplom topshirish joyi</li>
+              <li data-i18n="svc4f3">Gul yo'laklari</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/service-nikkah.jpg" alt="Nikoh" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">🌙</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc5Title">Nikoh Marosimlari</h3>
+            <p data-i18n="svc5Desc">An'anaviy va zamonaviy nikoh marosimlari uchun maxsus bezash. Milliy va zamonaviy uslublarning uyg'unligi.</p>
+            <ul class="service-features">
+              <li data-i18n="svc5f1">Milliy bezaklar</li>
+              <li data-i18n="svc5f2">Arfa va gullar</li>
+              <li data-i18n="svc5f3">Yoritish va parda</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="assets/service-photo.jpg" alt="Foto zona" onerror="this.style.display='none'" />
+            <div class="service-img-fallback">📸</div>
+          </div>
+          <div class="service-info">
+            <h3 data-i18n="svc6Title">Foto Zonalar</h3>
+            <p data-i18n="svc6Desc">Har qanday tadbir uchun esda qolarli foto zonalar yaratish. Kreativ fonlar va bezaklar bilan.</p>
+            <ul class="service-features">
+              <li data-i18n="svc6f1">Kreativ fonlar</li>
+              <li data-i18n="svc6f2">Shamlar va gullar</li>
+              <li data-i18n="svc6f3">Yoritish tizimi</li>
+            </ul>
+            <button class="btn-primary" data-page="contact" data-i18n="svcCta">Buyurtma Berish</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── PRICING PAGE ───────────── -->
+  <section class="page hidden" id="page-pricing" data-page="pricing">
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <div class="hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="pricingEyebrow">Shaffof narxlar</span></div>
+        <h1 class="page-hero-title" data-i18n="pricingTitle">Narxlar</h1>
+        <p data-i18n="pricingSubtitle">Har bir byudjet uchun maqbul paketlar</p>
+      </div>
+    </div>
+
+    <div class="pricing-section">
+      <div class="pricing-toggle-wrap">
+        <span data-i18n="pricingNote">* Narxlar so'mda, KQS kiritilmagan</span>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="price-tier" data-i18n="priceTier1">Standart</div>
+          <div class="price-amount">
+            <!-- ↓ O'zgartirish uchun bu qiymatni tahrirlang -->
+            <span class="price-num" data-price="standard">500</span>
+            <span class="price-currency">ming</span>
+          </div>
+          <p class="price-desc" data-i18n="priceDesc1">Kichik tadbirlar uchun asosiy bezash paketi</p>
+          <ul class="price-features">
+            <li data-i18n="pf1a">Gul kompozitsiyasi</li>
+            <li data-i18n="pf1b">Fon bezagi (1 ta)</li>
+            <li data-i18n="pf1c">Shamlar bezagi</li>
+            <li data-i18n="pf1d">O'rnatish xizmati</li>
+            <li class="not-included" data-i18n="pf1e">Yoritish tizimi</li>
+            <li class="not-included" data-i18n="pf1f">Foto zona</li>
+          </ul>
+          <button class="btn-ghost" data-page="contact" data-i18n="priceCta">Buyurtma Berish</button>
+        </div>
+
+        <div class="price-card popular">
+          <div class="popular-badge" data-i18n="popular">Mashhur Tanlov</div>
+          <div class="price-tier" data-i18n="priceTier2">Premium</div>
+          <div class="price-amount">
+            <!-- ↓ O'zgartirish uchun bu qiymatni tahrirlang -->
+            <span class="price-num" data-price="premium">800</span>
+            <span class="price-currency">ming</span>
+          </div>
+          <p class="price-desc" data-i18n="priceDesc2">O'rta va katta tadbirlar uchun to'liq paket</p>
+          <ul class="price-features">
+            <li data-i18n="pf2a">Keng gul kompozitsiyasi</li>
+            <li data-i18n="pf2b">Fon bezagi (3 ta)</li>
+            <li data-i18n="pf2c">Shamlar va chiroqlar</li>
+            <li data-i18n="pf2d">O'rnatish va yig'ish</li>
+            <li data-i18n="pf2e">Professional yoritish</li>
+            <li data-i18n="pf2f">Foto zona (1 ta)</li>
+          </ul>
+          <button class="btn-primary" data-page="contact" data-i18n="priceCta">Buyurtma Berish</button>
+        </div>
+
+        <div class="price-card">
+          <div class="price-tier" data-i18n="priceTier3">Eksklyuziv</div>
+          <div class="price-amount">
+            <!-- ↓ O'zgartirish uchun bu qiymatni tahrirlang -->
+            <span class="price-num" data-price="exclusive">600</span>
+            <span class="price-currency">ming</span>
+          </div>
+          <p class="price-desc" data-i18n="priceDesc3">VIP tadbirlar uchun to'liq premium xizmat</p>
+          <ul class="price-features">
+            <li data-i18n="pf3a">Premium gul kompozitsiyasi</li>
+            <li data-i18n="pf3b">Cheksiz fon bezaklari</li>
+            <li data-i18n="pf3c">Lüks shamlar va kristallar</li>
+            <li data-i18n="pf3d">24/7 qo'llab-quvvatlash</li>
+            <li data-i18n="pf3e">Professional yoritish tizimi</li>
+            <li data-i18n="pf3f">Bir nechta foto zonalar</li>
+          </ul>
+          <button class="btn-ghost" data-page="contact" data-i18n="priceCta">Buyurtma Berish</button>
+        </div>
+
+      </div>
+
+      <div class="pricing-note-box">
+        <div class="note-icon">ℹ</div>
+        <p data-i18n="pricingNote2">Narxlar taxminiy bo'lib, tadbir hajmi va xususiyatlariga qarab o'zgarishi mumkin. Aniq narx uchun biz bilan bog'laning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── CONTACT PAGE ───────────── -->
+  <section class="page hidden" id="page-contact" data-page="contact">
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <div class="hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">Biz bilan bog'laning</span></div>
+        <h1 class="page-hero-title" data-i18n="contactTitle">Murojaat Qilish</h1>
+        <p data-i18n="contactSubtitle">Savollaringiz bormi? Biz yordam berishga tayyormiz</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 data-i18n="contactInfoTitle">Bog'lanish Ma'lumotlari</h2>
+          <p data-i18n="contactInfoDesc">Qulay usulda biz bilan bog'laning. Tez orada javob beramiz.</p>
+
+          <div class="contact-cards">
+            <!-- Telegram Bot Link — O'ZGARTIRISh: href="https://t.me/YOUR_BOT_USERNAME" -->
+            <a class="contact-card telegram-cta" href="https://t.me/Gulmira_sahna" target="_blank" rel="noopener">
+              <div class="contact-card-icon">✈</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label" data-i18n="contactTg">Telegram Bot</span>
+                <span class="contact-card-val">@Gulmira_sahna</span>
+              </div>
+              <span class="contact-card-arrow">→</span>
+            </a>
+
+            <!-- Phone — O'ZGARTIRING -->
+            <div class="contact-card">
+              <div class="contact-card-icon">☎</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Telefon</span>
+                <span class="contact-card-val">+998 94 446 89 28</span>
+              </div>
+            </div>
+
+            <!-- Instagram — O'ZGARTIRING -->
+            <a class="contact-card" href="https://instagram.com/gulmira_sahna" target="_blank" rel="noopener">
+              <div class="contact-card-icon">◈</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Instagram</span>
+                <span class="contact-card-val">@gulmira_sahna</span>
+              </div>
+              <span class="contact-card-arrow">→</span>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-card-icon">⊙</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Manzil</span>
+                <span class="contact-card-val">Toshkent viloyati, Bekobod tumani, OYBEK MFY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Telegram CTA Banner -->
+          <div class="tg-banner">
+            <div class="tg-banner-inner">
+              <div class="tg-icon">✈</div>
+              <div class="tg-text">
+                <strong>Telegram orqali buyurtma bering</strong>
+                <span >Bot 24/7 ishlaydi. Tez va qulay!</span>
+              </div>
+              <!-- ↓ O'ZGARTIRING: href="https://t.me/YOUR_BOT_USERNAME" -->
+              <a href="https://t.me/Gulmira_sahna" target="_blank" class="tg-btn">Botga o'tish →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <h2>Xabar Yuborish</h2>
+          <div class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Ismingiz</label>
+              <input type="text" id="fname" placeholder="Ism Familiya" />
+            </div>
+            <div class="form-group">
+              <label>Telefon raqam</label>
+              <input type="tel" id="fphone" placeholder="+998 __ ___ __ __" />
+            </div>
+             <div class="form-group">
+              <label data-i18n="formService">Xizmat turi</label>
+              <select id="fservice">
+                <option value="" data-i18n="formSelectDefault">Tanlang...</option>
+                <option data-i18n="svc1Title">To'y Bezaklari</option>
+                <option data-i18n="svc2Title">Tug'ilgan Kun</option>
+                <option data-i18n="svc3Title">Korporativ Tadbirlar</option>
+                <option data-i18n="svc4Title">Bitirish Marosimlari</option>
+                <option data-i18n="svc5Title">Nikoh Marosimlari</option>
+                <option data-i18n="svc6Title">Foto Zonalar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Xabar</label>
+              <textarea id="fmsg" rows="4" placeholder="..."></textarea>
+            </div>
+            <button class="btn-primary full-width" id="sendTgBtn">Telegram orqali yuborish ✈</button>
+          </div>
+          </div>
+          <p class="form-note">* Formani to'ldirish Telegram botni ochadi</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════ FOOTER ═════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo-mark small">G</div>
+      <div>
+        <div class="brand-main" data-i18n="brand">Gulmira</div>
+        <div class="brand-sub" data-i18n="brandSub">Sahna Bezaklari</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#" data-page="home" data-i18n="navHome">Bosh sahifa</a>
+      <a href="#" data-page="services" data-i18n="navServices">Xizmatlar</a>
+      <a href="#" data-page="pricing" data-i18n="navPricing">Narxlar</a>
+      <a href="#" data-page="contact" data-i18n="navContact">Aloqa</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://t.me/Gulmira_sahna" target="_blank" class="social-link" title="Telegram">✈</a>
+      <a href="https://instagram.com/gulmira_sahna" target="_blank" class="social-link" title="Instagram">◈</a>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Gulmira Sahna Bezaklari. <span data-i18n="footerRights">Barcha huquqlar himoyalangan.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
